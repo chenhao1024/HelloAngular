@@ -1,0 +1,18 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">NgFor用法</div>
+  <div class="panel-body">
+    <h3>请选择一个种族</h3>
+    <ul>
+      <li *ngFor="let race of races;let i = index">
+        {{i+1}}-{{race.name}}
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">NgIf用法</div>
+    <div class="panel-body">
+      <p *ngIf="isShow" style="background-color:#ff3300">显示还是不显示？</p>
+      <button class="btn btn-success" (click)="toggleShow()">控制显示隐藏</button>
+    </div>
+  </div>

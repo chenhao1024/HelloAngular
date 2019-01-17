@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TestEventBindingComponent } from './test-event-binding/test-event-binding.component';
 import { TestInterpolationComponent } from './test-interpolation/test-interpolation.component';
 import { TestNgClassComponent } from './test-ng-class/test-ng-class.component';
+import { TestNgForIfComponent } from './test-ng-for-if/test-ng-for-if.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestEventBindingComponent,
     TestInterpolationComponent,
-    TestNgClassComponent
+    TestNgClassComponent,
+    TestNgForIfComponent
   ],
   imports: [
     BrowserModule,
