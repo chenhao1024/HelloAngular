@@ -14,6 +14,8 @@ import { TestNgSwitchComponent } from './test-ng-switch/test-ng-switch.component
 import { TestPipeComponent } from './test-pipe/test-pipe.component';
 import { TestSafeNavComponent } from './test-safe-nav/test-safe-nav.component';
 import { TestTempRefVarComponent } from './test-temp-ref-var/test-temp-ref-var.component';
+import { TestTwowayBindingComponent } from './test-twoway-binding/test-twoway-binding.component';
+import { FontResizerComponent } from './test-twoway-binding/font-resizer/font-resizer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { TestTempRefVarComponent } from './test-temp-ref-var/test-temp-ref-var.c
     TestNgSwitchComponent,
     TestPipeComponent,
     TestSafeNavComponent,
-    TestTempRefVarComponent
+    TestTempRefVarComponent,
+    TestTwowayBindingComponent,
+    FontResizerComponent
   ],
   imports: [
     BrowserModule,
