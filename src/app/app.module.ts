@@ -16,6 +16,7 @@ import { TestSafeNavComponent } from './test-safe-nav/test-safe-nav.component';
 import { TestTempRefVarComponent } from './test-temp-ref-var/test-temp-ref-var.component';
 import { TestTwowayBindingComponent } from './test-twoway-binding/test-twoway-binding.component';
 import { FontResizerComponent } from './test-twoway-binding/font-resizer/font-resizer.component';
+import { TestValueBindComponent } from './test-value-bind/test-value-bind.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FontResizerComponent } from './test-twoway-binding/font-resizer/font-re
     TestSafeNavComponent,
     TestTempRefVarComponent,
     TestTwowayBindingComponent,
-    FontResizerComponent
+    FontResizerComponent,
+    TestValueBindComponent
   ],
   imports: [
     BrowserModule,
