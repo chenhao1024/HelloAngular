@@ -20,6 +20,7 @@ import { TestValueBindComponent } from './test-value-bind/test-value-bind.compon
 import { ParentAndChildComponent } from './parent-and-child/parent-and-child.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { TemplateComponent } from './template/template.component';
+import { ChildComponent } from './parent-and-child/child/child.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { TemplateComponent } from './template/template.component';
     TestValueBindComponent,
     ParentAndChildComponent,
     CommunicationComponent,
-    TemplateComponent
+    TemplateComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
