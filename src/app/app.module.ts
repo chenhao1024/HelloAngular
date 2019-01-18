@@ -17,6 +17,9 @@ import { TestTempRefVarComponent } from './test-temp-ref-var/test-temp-ref-var.c
 import { TestTwowayBindingComponent } from './test-twoway-binding/test-twoway-binding.component';
 import { FontResizerComponent } from './test-twoway-binding/font-resizer/font-resizer.component';
 import { TestValueBindComponent } from './test-value-bind/test-value-bind.component';
+import { ParentAndChildComponent } from './parent-and-child/parent-and-child.component';
+import { CommunicationComponent } from './communication/communication.component';
+import { TemplateComponent } from './template/template.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { TestValueBindComponent } from './test-value-bind/test-value-bind.compon
     TestTempRefVarComponent,
     TestTwowayBindingComponent,
     FontResizerComponent,
-    TestValueBindComponent
+    TestValueBindComponent,
+    ParentAndChildComponent,
+    CommunicationComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
