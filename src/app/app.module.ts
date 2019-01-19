@@ -27,6 +27,8 @@ import { Child2Component } from './brother/child2/child2.component';
 import { LocalStorageComponent } from './local-storage/local-storage.component';
 import { LocalChild1Component } from './local-storage/local-child1/local-child1.component';
 import { LocalChild2Component } from './local-storage/local-child2/local-child2.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { LifeCycleComponent } from './lifecycle/life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { LocalChild2Component } from './local-storage/local-child2/local-child2.
     Child2Component,
     LocalStorageComponent,
     LocalChild1Component,
-    LocalChild2Component
+    LocalChild2Component,
+    LifecycleComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
