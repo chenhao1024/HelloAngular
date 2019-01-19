@@ -21,6 +21,9 @@ import { ParentAndChildComponent } from './parent-and-child/parent-and-child.com
 import { CommunicationComponent } from './communication/communication.component';
 import { TemplateComponent } from './template/template.component';
 import { ChildComponent } from './parent-and-child/child/child.component';
+import { BrotherComponent } from './brother/brother.component';
+import { Child1Component } from './brother/child1/child1.component';
+import { Child2Component } from './brother/child2/child2.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { ChildComponent } from './parent-and-child/child/child.component';
     ParentAndChildComponent,
     CommunicationComponent,
     TemplateComponent,
-    ChildComponent
+    ChildComponent,
+    BrotherComponent,
+    Child1Component,
+    Child2Component
   ],
   imports: [
     BrowserModule,
