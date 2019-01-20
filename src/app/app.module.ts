@@ -37,6 +37,9 @@ import { Child111Component } from './lifecycle/cycle-parent/child111/child111.co
 import { Child222Component } from './lifecycle/cycle-parent/child222/child222.component';
 import { AnimationComponent } from './animation/animation.component';
 import { FlyInComponent } from './animation/fly-in/fly-in.component';
+import { DynamicComponent } from './dynamic/dynamic.component';
+import { CompComponent } from './dynamic/comp/comp.component';
+import { CompChildComponent } from './dynamic/comp/comp-child/comp-child.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,10 @@ import { FlyInComponent } from './animation/fly-in/fly-in.component';
     Child111Component,
     Child222Component,
     AnimationComponent,
-    FlyInComponent
+    FlyInComponent,
+    DynamicComponent,
+    CompComponent,
+    CompChildComponent
   ],
   imports: [
     BrowserModule,
@@ -81,6 +87,7 @@ import { FlyInComponent } from './animation/fly-in/fly-in.component';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [CompChildComponent] // 入口组件（entry component）是通过组件的类型动态加载
 })
 export class AppModule { }
