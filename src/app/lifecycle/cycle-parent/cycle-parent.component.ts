@@ -9,8 +9,7 @@ export class CycleParentComponent implements OnInit {
   // @ViewChild('child111')
   // child111: Child111Component;
 
-  @ViewChild('child222')
-  child222: Child111Component;
+  @ViewChild('child222') child222;
   constructor() { }
 
   ngOnInit() {
