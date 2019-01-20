@@ -31,6 +31,9 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { LifeCycleComponent } from './lifecycle/life-cycle/life-cycle.component';
 import { NgOnChangesComponent } from './lifecycle/ng-on-changes/ng-on-changes.component';
 import { Child11Component } from './lifecycle/ng-on-changes/child1/child1.component';
+import { CycleParentComponent } from './lifecycle/cycle-parent/cycle-parent.component';
+import { Child111Component } from './lifecycle/cycle-parent/child111/child111.component';
+import { Child222Component } from './lifecycle/cycle-parent/child222/child222.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +64,10 @@ import { Child11Component } from './lifecycle/ng-on-changes/child1/child1.compon
     LifecycleComponent,
     LifeCycleComponent,
     NgOnChangesComponent,
-    Child11Component
+    Child11Component,
+    CycleParentComponent,
+    Child111Component,
+    Child222Component
   ],
   imports: [
     BrowserModule,
