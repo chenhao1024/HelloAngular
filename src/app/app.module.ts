@@ -40,6 +40,10 @@ import { FlyInComponent } from './animation/fly-in/fly-in.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
 import { CompComponent } from './dynamic/comp/comp.component';
 import { CompChildComponent } from './dynamic/comp/comp-child/comp-child.component';
+import { ShadowdomComponent } from './shadowdom/shadowdom.component';
+import { EmulateModeComponent } from './shadowdom/emulate-mode/emulate-mode.component';
+import { NoneModeComponent } from './shadowdom/none-mode/none-mode.component';
+import { ShadowDownModeComponent } from './shadowdom/shadow-down-mode/shadow-down-mode.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +82,11 @@ import { CompChildComponent } from './dynamic/comp/comp-child/comp-child.compone
     FlyInComponent,
     DynamicComponent,
     CompComponent,
-    CompChildComponent
+    CompChildComponent,
+    ShadowdomComponent,
+    EmulateModeComponent,
+    NoneModeComponent,
+    ShadowDownModeComponent
   ],
   imports: [
     BrowserModule,

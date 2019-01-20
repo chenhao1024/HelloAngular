@@ -5,12 +5,14 @@ import {LifecycleComponent} from './lifecycle/lifecycle.component';
 import {TemplateComponent} from './template/template.component';
 import {AnimationComponent} from './animation/animation.component';
 import {DynamicComponent} from './dynamic/dynamic.component';
+import {ShadowdomComponent} from './shadowdom/shadowdom.component';
 const routes: Routes = [
   {path: '', component: TemplateComponent},
   {path: 'communication', component: CommunicationComponent},
   {path: 'lifecycle', component: LifecycleComponent},
   {path: 'animation', component: AnimationComponent},
-  {path: 'dynamic', component: DynamicComponent}
+  {path: 'dynamic', component: DynamicComponent},
+  {path: 'shadowdom', component: ShadowdomComponent},
 ];
 
 @NgModule({
