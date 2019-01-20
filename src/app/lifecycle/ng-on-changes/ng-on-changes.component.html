@@ -1,0 +1,20 @@
+<div>
+  <div>父组件</div>
+  <div>
+    <form action="">
+      <div>
+        <label for="">用户名1：</label>
+        <div>
+          <input type="text" name="userName1" [ngModel]="userName">
+        </div>
+      </div>
+      <div>
+        <label for="">用户名2：</label>
+        <div>
+          <input type="text" [(ngModel)]="userObj.userName" name="userName2">
+        </div>
+      </div>
+    </form>
+    <app-child11 [userName]="userName" [userObj]="userObj"></app-child11>
+  </div>
+</div>

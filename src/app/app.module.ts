@@ -29,6 +29,8 @@ import { LocalChild1Component } from './local-storage/local-child1/local-child1.
 import { LocalChild2Component } from './local-storage/local-child2/local-child2.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { LifeCycleComponent } from './lifecycle/life-cycle/life-cycle.component';
+import { NgOnChangesComponent } from './lifecycle/ng-on-changes/ng-on-changes.component';
+import { Child11Component } from './lifecycle/ng-on-changes/child1/child1.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { LifeCycleComponent } from './lifecycle/life-cycle/life-cycle.component'
     LocalChild1Component,
     LocalChild2Component,
     LifecycleComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    NgOnChangesComponent,
+    Child11Component
   ],
   imports: [
     BrowserModule,
