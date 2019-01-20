@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,8 @@ import { Child11Component } from './lifecycle/ng-on-changes/child1/child1.compon
 import { CycleParentComponent } from './lifecycle/cycle-parent/cycle-parent.component';
 import { Child111Component } from './lifecycle/cycle-parent/child111/child111.component';
 import { Child222Component } from './lifecycle/cycle-parent/child222/child222.component';
+import { AnimationComponent } from './animation/animation.component';
+import { FlyInComponent } from './animation/fly-in/fly-in.component';
 
 @NgModule({
   declarations: [
@@ -67,12 +70,15 @@ import { Child222Component } from './lifecycle/cycle-parent/child222/child222.co
     Child11Component,
     CycleParentComponent,
     Child111Component,
-    Child222Component
+    Child222Component,
+    AnimationComponent,
+    FlyInComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
