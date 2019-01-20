@@ -44,6 +44,10 @@ import { ShadowdomComponent } from './shadowdom/shadowdom.component';
 import { EmulateModeComponent } from './shadowdom/emulate-mode/emulate-mode.component';
 import { NoneModeComponent } from './shadowdom/none-mode/none-mode.component';
 import { ShadowDownModeComponent } from './shadowdom/shadow-down-mode/shadow-down-mode.component';
+import { ContentComponent } from './content/content.component';
+import { NgContentComponent } from './content/ng-content/ng-content.component';
+import { ChildTwoComponent } from './content/ng-content/child-two/child-two.component';
+import { ChildThreeComponent } from './content/ng-content/child-three/child-three.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +90,11 @@ import { ShadowDownModeComponent } from './shadowdom/shadow-down-mode/shadow-dow
     ShadowdomComponent,
     EmulateModeComponent,
     NoneModeComponent,
-    ShadowDownModeComponent
+    ShadowDownModeComponent,
+    ContentComponent,
+    NgContentComponent,
+    ChildTwoComponent,
+    ChildThreeComponent
   ],
   imports: [
     BrowserModule,
