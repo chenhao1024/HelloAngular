@@ -48,6 +48,9 @@ import { ContentComponent } from './content/content.component';
 import { NgContentComponent } from './content/ng-content/ng-content.component';
 import { ChildTwoComponent } from './content/ng-content/child-two/child-two.component';
 import { ChildThreeComponent } from './content/ng-content/child-three/child-three.component';
+import { ContentChildComponent } from './content-child/content-child.component';
+import { ChildnumoneComponent } from './content-child/childnumone/childnumone.component';
+import { ChildnumtwoComponent } from './content-child/childnumtwo/childnumtwo.component';
 
 @NgModule({
   declarations: [
@@ -94,7 +97,10 @@ import { ChildThreeComponent } from './content/ng-content/child-three/child-thre
     ContentComponent,
     NgContentComponent,
     ChildTwoComponent,
-    ChildThreeComponent
+    ChildThreeComponent,
+    ContentChildComponent,
+    ChildnumoneComponent,
+    ChildnumtwoComponent
   ],
   imports: [
     BrowserModule,
