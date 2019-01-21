@@ -53,7 +53,10 @@ import { ChildnumoneComponent } from './content-child/childnumone/childnumone.co
 import { ChildnumtwoComponent } from './content-child/childnumtwo/childnumtwo.component';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { ViewOneComponent } from './view-child/view-one/view-one.component';
-
+import { DirectiveComponent } from './directive/directive.component';
+import { CardComponent } from './directive/card/card.component';
+import { MyHighLightDirective } from './directive/directives/my-high-light.directive';
+import { DelayDirective } from './directive/directives/delay.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -104,7 +107,11 @@ import { ViewOneComponent } from './view-child/view-one/view-one.component';
     ChildnumoneComponent,
     ChildnumtwoComponent,
     ViewChildComponent,
-    ViewOneComponent
+    ViewOneComponent,
+    DirectiveComponent,
+    CardComponent,
+    MyHighLightDirective,
+    DelayDirective
   ],
   imports: [
     BrowserModule,
