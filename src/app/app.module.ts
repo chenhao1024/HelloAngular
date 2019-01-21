@@ -51,6 +51,8 @@ import { ChildThreeComponent } from './content/ng-content/child-three/child-thre
 import { ContentChildComponent } from './content-child/content-child.component';
 import { ChildnumoneComponent } from './content-child/childnumone/childnumone.component';
 import { ChildnumtwoComponent } from './content-child/childnumtwo/childnumtwo.component';
+import { ViewChildComponent } from './view-child/view-child.component';
+import { ViewOneComponent } from './view-child/view-one/view-one.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +102,9 @@ import { ChildnumtwoComponent } from './content-child/childnumtwo/childnumtwo.co
     ChildThreeComponent,
     ContentChildComponent,
     ChildnumoneComponent,
-    ChildnumtwoComponent
+    ChildnumtwoComponent,
+    ViewChildComponent,
+    ViewOneComponent
   ],
   imports: [
     BrowserModule,

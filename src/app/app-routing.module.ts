@@ -8,6 +8,7 @@ import {DynamicComponent} from './dynamic/dynamic.component';
 import {ShadowdomComponent} from './shadowdom/shadowdom.component';
 import {ContentComponent} from './content/content.component';
 import {ContentChildComponent} from './content-child/content-child.component';
+import {ViewChildComponent} from './view-child/view-child.component';
 const routes: Routes = [
   {path: '', component: TemplateComponent},
   {path: 'communication', component: CommunicationComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'shadowdom', component: ShadowdomComponent},
   {path: 'content', component: ContentComponent},
   {path: 'content-child', component: ContentChildComponent},
+  {path: 'view-child', component: ViewChildComponent},
 ];
 
 @NgModule({
