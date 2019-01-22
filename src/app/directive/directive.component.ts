@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directive.component.scss']
 })
 export class DirectiveComponent implements OnInit {
-
+  condition: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
-
+  Toggle() {
+    this.condition = !this.condition;
+  }
 }

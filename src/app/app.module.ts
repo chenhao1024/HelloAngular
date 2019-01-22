@@ -57,6 +57,7 @@ import { DirectiveComponent } from './directive/directive.component';
 import { CardComponent } from './directive/card/card.component';
 import { MyHighLightDirective } from './directive/directives/my-high-light.directive';
 import { DelayDirective } from './directive/directives/delay.directive';
+import { UnlessDirective } from './directive/directives/unless.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -111,7 +112,8 @@ import { DelayDirective } from './directive/directives/delay.directive';
     DirectiveComponent,
     CardComponent,
     MyHighLightDirective,
-    DelayDirective
+    DelayDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
