@@ -59,6 +59,9 @@ import { MyHighLightDirective } from './directive/directives/my-high-light.direc
 import { DelayDirective } from './directive/directives/delay.directive';
 import { UnlessDirective } from './directive/directives/unless.directive';
 import { TestComponentComponent } from './directive/test-component/test-component.component';
+import { NgmoduleComponent } from './ngmodule/ngmodule.component';
+import { OrderMngComponent } from './ngmodule/order-mng/order-mng.component';
+import { OrderServiceService } from './ngmodule/order-mng/order-service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -115,7 +118,9 @@ import { TestComponentComponent } from './directive/test-component/test-componen
     MyHighLightDirective,
     DelayDirective,
     UnlessDirective,
-    TestComponentComponent
+    TestComponentComponent,
+    NgmoduleComponent,
+    OrderMngComponent
   ],
   imports: [
     BrowserModule,
@@ -123,7 +128,7 @@ import { TestComponentComponent } from './directive/test-component/test-componen
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [OrderServiceService],
   bootstrap: [AppComponent],
   entryComponents: [CompChildComponent] // 入口组件（entry component）是通过组件的类型动态加载
 })

@@ -10,6 +10,7 @@ import {ContentComponent} from './content/content.component';
 import {ContentChildComponent} from './content-child/content-child.component';
 import {ViewChildComponent} from './view-child/view-child.component';
 import {DirectiveComponent} from './directive/directive.component';
+import {NgmoduleComponent} from './ngmodule/ngmodule.component';
 const routes: Routes = [
   {path: '', component: TemplateComponent},
   {path: 'communication', component: CommunicationComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'content-child', component: ContentChildComponent},
   {path: 'view-child', component: ViewChildComponent},
   {path: 'directive', component: DirectiveComponent},
+  {path: 'ngmodule', component: NgmoduleComponent},
 ];
 
 @NgModule({
