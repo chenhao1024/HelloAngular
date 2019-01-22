@@ -1,14 +1,14 @@
-import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
+import { Component, OnInit, ViewChildren, QueryList, AfterViewInit } from '@angular/core';
 import {ViewOneComponent} from './view-one/view-one.component';
 @Component({
   selector: 'app-view-child',
   templateUrl: './view-child.component.html',
   styleUrls: ['./view-child.component.scss']
 })
-export class ViewChildComponent implements OnInit {
+export class ViewChildComponent implements OnInit, AfterViewInit {
 
   @ViewChildren(ViewOneComponent)
-  children: QueryList<ViewChildComponent>;
+  children: QueryList<ViewOneComponent>;
 
   constructor() { }
 
@@ -18,7 +18,7 @@ export class ViewChildComponent implements OnInit {
     this.children.forEach(item => {
       item.helloEvent.subscribe(data => {
         console.log(data);
-      })
-    })
+      });
+    });
   }
 }
