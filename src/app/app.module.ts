@@ -62,6 +62,8 @@ import { TestComponentComponent } from './directive/test-component/test-componen
 import { NgmoduleComponent } from './ngmodule/ngmodule.component';
 import { OrderMngComponent } from './ngmodule/order-mng/order-mng.component';
 import { OrderServiceService } from './ngmodule/order-mng/order-service.service';
+import { HomeComponent } from './home/home.component';
+import { JokesComponent } from './jokes/jokes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -120,7 +122,9 @@ import { OrderServiceService } from './ngmodule/order-mng/order-service.service'
     UnlessDirective,
     TestComponentComponent,
     NgmoduleComponent,
-    OrderMngComponent
+    OrderMngComponent,
+    HomeComponent,
+    JokesComponent
   ],
   imports: [
     BrowserModule,
