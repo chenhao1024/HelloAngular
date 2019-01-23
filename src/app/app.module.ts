@@ -62,8 +62,8 @@ import { TestComponentComponent } from './directive/test-component/test-componen
 import { NgmoduleComponent } from './ngmodule/ngmodule.component';
 import { OrderMngComponent } from './ngmodule/order-mng/order-mng.component';
 import { OrderServiceService } from './ngmodule/order-mng/order-service.service';
-import { HomeComponent } from './home/home.component';
-import { JokesComponent } from './jokes/jokes.component';
+// import { HomeComponent } from './home/home.component';
+// import { JokesComponent } from './jokes/jokes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -123,8 +123,8 @@ import { JokesComponent } from './jokes/jokes.component';
     TestComponentComponent,
     NgmoduleComponent,
     OrderMngComponent,
-    HomeComponent,
-    JokesComponent
+    // HomeComponent,
+    // JokesComponent
   ],
   imports: [
     BrowserModule,
