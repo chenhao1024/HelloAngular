@@ -1,9 +1,24 @@
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home.component';
-
-export const homeRoutes = [
+import {PictureComponent} from './picture/picture.component';
+import {TextComponent} from './text/text.component';
+export const homeRoutes = [{
+  path: '',
+  component: HomeComponent,
+  children: [
   {
     path: '',
-    component: HomeComponent
+    redirectTo: 'picture',
+    pathMatch: 'full'
+  },
+  {
+    path: 'picture',
+    component: PictureComponent
+  },
+  {
+    path: 'text',
+    component: TextComponent
   }
+]
+}
 ];
