@@ -2,8 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, PreloadAllModules } from '@angular/router';
+import { MypreloadingStrategy } from './common/my-preloading-strategy';
 
-import { AppRoutingModule } from './app-routing.module';
+
+import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestEventBindingComponent } from './test-event-binding/test-event-binding.component';
 import { TestInterpolationComponent } from './test-interpolation/test-interpolation.component';
@@ -134,9 +137,10 @@ import { OrderServiceService } from './ngmodule/order-mng/order-service.service'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes, {preloadingStrategy: MypreloadingStrategy})
   ],
-  providers: [OrderServiceService],
+  providers: [OrderServiceService, MypreloadingStrategy],
   bootstrap: [AppComponent],
   entryComponents: [CompChildComponent] // 入口组件（entry component）是通过组件的类型动态加载
 })

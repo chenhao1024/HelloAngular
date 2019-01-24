@@ -13,7 +13,7 @@ import {DirectiveComponent} from './directive/directive.component';
 import {NgmoduleComponent} from './ngmodule/ngmodule.component';
 // import {HomeComponent} from './home/home.component';
 // import {JokesComponent} from './jokes/jokes.component';
-const routes: Routes = [
+export const routes: Routes = [
   {path: '', component: TemplateComponent},
   {path: 'communication', component: CommunicationComponent},
   {path: 'lifecycle', component: LifecycleComponent},
@@ -25,8 +25,8 @@ const routes: Routes = [
   {path: 'view-child', component: ViewChildComponent},
   {path: 'directive', component: DirectiveComponent},
   {path: 'ngmodule', component: NgmoduleComponent},
-  {path: 'home/:page', loadChildren: './home/home.module#HomeModule'},
-  {path: 'jokes', loadChildren: './jokes/jokes.module#JokesModule'},
+  {path: 'home/:page', loadChildren: './home/home.module#HomeModule', data: {preload: false}},
+  {path: 'jokes', loadChildren: './jokes/jokes.module#JokesModule', data: {preload: true}},
 ];
 
 @NgModule({
