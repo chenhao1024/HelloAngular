@@ -62,6 +62,8 @@ import { TestComponentComponent } from './directive/test-component/test-componen
 import { NgmoduleComponent } from './ngmodule/ngmodule.component';
 import { OrderMngComponent } from './ngmodule/order-mng/order-mng.component';
 import { OrderServiceService } from './ngmodule/order-mng/order-service.service';
+// import { OrderInfoComponent } from './order-info/order-info.component';
+// import { UserInfoComponent } from './user-info/user-info.component';
 // import { HomeComponent } from './home/home.component';
 // import { JokesComponent } from './jokes/jokes.component';
 @NgModule({
@@ -123,6 +125,8 @@ import { OrderServiceService } from './ngmodule/order-mng/order-service.service'
     TestComponentComponent,
     NgmoduleComponent,
     OrderMngComponent,
+    // OrderInfoComponent,
+    // UserInfoComponent,
     // HomeComponent,
     // JokesComponent
   ],
