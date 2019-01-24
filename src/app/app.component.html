@@ -16,7 +16,7 @@
   <a routerLink="/ngmodule" class="btn btn-primary navigation">Ngmodule</a>
 </div>
 <div style="text-align:center">
-  <a routerLink="/home" class="btn btn-primary navigation">Home</a>
-  <a routerLink="/jokes" class="btn btn-primary navigation">Jokes</a>
+  <a [routerLink]="['home','1']" class="btn btn-primary navigation">Home</a>
+  <a [routerLink]="['jokes',{'id':111,name:'damo'}]" class="btn btn-primary navigation">Jokes</a>
 </div>
 <router-outlet></router-outlet>

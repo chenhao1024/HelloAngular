@@ -25,7 +25,7 @@ const routes: Routes = [
   {path: 'view-child', component: ViewChildComponent},
   {path: 'directive', component: DirectiveComponent},
   {path: 'ngmodule', component: NgmoduleComponent},
-  {path: 'home', loadChildren: './home/home.module#HomeModule'},
+  {path: 'home/:page', loadChildren: './home/home.module#HomeModule'},
   {path: 'jokes', loadChildren: './jokes/jokes.module#JokesModule'},
 ];
 

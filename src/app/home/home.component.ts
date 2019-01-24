@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {Router, NavigationStart} from '@angular/router';
+import {Router, NavigationStart, ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +9,17 @@ import {Router, NavigationStart} from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private activeRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.router.events.subscribe(event => {
       console.log(event);
-      //可以用instanceof来判断事件的类型，然后去做你想要做的事情
+      // 可以用instanceof来判断事件的类型，然后去做你想要做的事情
       console.log(event instanceof NavigationStart);
     });
+    this.activeRoute.params.subscribe(params => {console.log(params); });
   }
-
+  manualNav(): void {
+    this.router.navigate(['/jokes'], {queryParams: {page: 1, name: 222}});
+  }
 }
