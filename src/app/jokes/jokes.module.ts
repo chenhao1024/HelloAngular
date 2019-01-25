@@ -3,10 +3,11 @@ import {RouterModule} from '@angular/router';
 import {JokesComponent} from './jokes.component';
 import {jokesRoutes} from './jokes.routes';
 import { SharedModule} from '../shared/shared.moudle';
+import {JokesGuard} from './jokes-guard';
 @NgModule({
   declarations: [JokesComponent],
   imports: [RouterModule.forChild(jokesRoutes), SharedModule],
-  providers: [],
+  providers: [JokesGuard],
   bootstrap: []
 })
 

@@ -8,7 +8,8 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./jokes.component.scss']
 })
 export class JokesComponent implements OnInit {
-
+  saved: boolean = true;
+  jokeContent: string = '';
   constructor(private router: Router, private activeRoute: ActivatedRoute) { }
 
   ngOnInit() {
@@ -18,6 +19,17 @@ export class JokesComponent implements OnInit {
     this.activeRoute.params.subscribe(
       params => {console.log(params); }
     );
+  }
+
+  writeJoke(value) {
+    this.jokeContent = value;
+    this.saved = false;
+  }
+
+  saveContent() {
+    console.log(this.jokeContent);
+    this.jokeContent = '';
+    this.saved = true;
   }
 
 }
