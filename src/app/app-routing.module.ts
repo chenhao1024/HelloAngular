@@ -11,6 +11,7 @@ import {ContentChildComponent} from './content-child/content-child.component';
 import {ViewChildComponent} from './view-child/view-child.component';
 import {DirectiveComponent} from './directive/directive.component';
 import {NgmoduleComponent} from './ngmodule/ngmodule.component';
+import { AuthGuard } from './auth/auth.guard';
 // import {HomeComponent} from './home/home.component';
 // import {JokesComponent} from './jokes/jokes.component';
 export const routes: Routes = [
@@ -26,7 +27,7 @@ export const routes: Routes = [
   {path: 'directive', component: DirectiveComponent},
   {path: 'ngmodule', component: NgmoduleComponent},
   {path: 'home/:page', loadChildren: './home/home.module#HomeModule', data: {preload: false}},
-  {path: 'jokes', loadChildren: './jokes/jokes.module#JokesModule', data: {preload: true}},
+  {path: 'jokes', loadChildren: './jokes/jokes.module#JokesModule', data: {preload: true}, canActivate: [AuthGuard]},
 ];
 
 @NgModule({

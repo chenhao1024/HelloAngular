@@ -69,6 +69,8 @@ import { OrderServiceService } from './ngmodule/order-mng/order-service.service'
 // import { UserInfoComponent } from './user-info/user-info.component';
 // import { HomeComponent } from './home/home.component';
 // import { JokesComponent } from './jokes/jokes.component';
+import {AuthGuard} from './auth/auth.guard';
+import {AuthService} from './auth/auth.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -140,7 +142,7 @@ import { OrderServiceService } from './ngmodule/order-mng/order-service.service'
     BrowserAnimationsModule,
     RouterModule.forRoot(routes, {preloadingStrategy: MypreloadingStrategy})
   ],
-  providers: [OrderServiceService, MypreloadingStrategy],
+  providers: [OrderServiceService, MypreloadingStrategy, AuthGuard, AuthService],
   bootstrap: [AppComponent],
   entryComponents: [CompChildComponent] // 入口组件（entry component）是通过组件的类型动态加载
 })
