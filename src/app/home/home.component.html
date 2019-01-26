@@ -11,4 +11,14 @@
   </ul>
   <button class="btn btn-primary" (click)="manualNav()">手动导航</button>
   <router-outlet></router-outlet>
+  <a [routerLink]="['home', {outlets: {'left-nav': ['leftNav'], 'main-area': ['none']}}]">主页</a>
+</div>
+
+<div class="row">
+  <div class="col-xs-3">
+    <router-outlet name="left-nav"></router-outlet>
+  </div>
+  <div class="col-xs-9">
+    <router-outlet name="main-area"></router-outlet>
+  </div>
 </div>

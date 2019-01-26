@@ -27,7 +27,7 @@ export const routes: Routes = [
   {path: 'directive', component: DirectiveComponent},
   {path: 'ngmodule', component: NgmoduleComponent},
   {path: 'home/:page', loadChildren: './home/home.module#HomeModule', data: {preload: false}},
-  {path: 'jokes', loadChildren: './jokes/jokes.module#JokesModule', data: {preload: true}, canActivate: [AuthGuard]},
+  {path: 'jokes', loadChildren: './jokes/jokes.module#JokesModule', data: {preload: true}, canActivate: [AuthGuard], canLoad: [AuthGuard]},
 ];
 
 @NgModule({
