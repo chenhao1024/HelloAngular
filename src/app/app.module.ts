@@ -71,6 +71,8 @@ import { OrderServiceService } from './ngmodule/order-mng/order-service.service'
 // import { JokesComponent } from './jokes/jokes.component';
 import {AuthGuard} from './auth/auth.guard';
 import {AuthService} from './auth/auth.service';
+import { FormComponent } from './form/form.component';
+import { QuickStartComponent } from './form/quick-start/quick-start.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -130,6 +132,8 @@ import {AuthService} from './auth/auth.service';
     TestComponentComponent,
     NgmoduleComponent,
     OrderMngComponent,
+    FormComponent,
+    QuickStartComponent,
     // OrderInfoComponent,
     // UserInfoComponent,
     // HomeComponent,
