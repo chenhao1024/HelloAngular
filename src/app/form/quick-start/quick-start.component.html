@@ -1,7 +1,7 @@
 <div class="panel panel-primary">
   <div class="panel-heading">用户注册</div>
   <div class="panel-body">
-    <form #registerForm class="form-horizontal" (ngSubmit)="onSubmit(registerForm)">
+    <form #registerForm="ngForm" class="form-horizontal" (ngSubmit)="onSubmit(registerForm)">
       <div class="form-group" [ngClass]="{'has-error': userName.invalid && (userName.dirty || userName.touched)}">
         <label class="col-xs-2 control-label">用户名：</label>
         <div class="col-xs-10">
