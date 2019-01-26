@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {RegisterModel} from './model/register-model';
+import {NgForm} from '@angular/forms';
 @Component({
   selector: 'app-quick-start',
   templateUrl: './quick-start.component.html',
@@ -15,4 +16,8 @@ export class QuickStartComponent implements OnInit {
   //   console.log(event);
   //   this.userName = event.target.value;
   // }
+  onSubmit(f: NgForm) {
+    console.log(f.value);  // { first: '', last: '' }
+    console.log(f.valid);  // false
+  }
 }

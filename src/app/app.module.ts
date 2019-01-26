@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { MypreloadingStrategy } from './common/my-preloading-strategy';
+import {ChineseMobileValidator} from './form/quick-start/directives/Chinese-mobile-validator.directive';
 
 
 import { AppRoutingModule, routes } from './app-routing.module';
@@ -134,6 +135,7 @@ import { QuickStartComponent } from './form/quick-start/quick-start.component';
     OrderMngComponent,
     FormComponent,
     QuickStartComponent,
+    ChineseMobileValidator
     // OrderInfoComponent,
     // UserInfoComponent,
     // HomeComponent,

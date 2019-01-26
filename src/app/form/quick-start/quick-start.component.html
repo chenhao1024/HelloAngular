@@ -1,11 +1,35 @@
 <div class="panel panel-primary">
   <div class="panel-heading">用户注册</div>
   <div class="panel-body">
-    <form class="form-horizontal">
-      <div class="form-group">
+    <form #registerForm class="form-horizontal" (ngSubmit)="onSubmit(registerForm)">
+      <div class="form-group" [ngClass]="{'has-error': userName.invalid && (userName.dirty || userName.touched)}">
         <label class="col-xs-2 control-label">用户名：</label>
         <div class="col-xs-10">
-          <input type="email" class="form-control" placeholder="Email" name="userName" [(ngModel)]="regModel.userName">
+          <input type="email" class="form-control" placeholder="Email" name="userName" [(ngModel)]="regModel.userName"
+            #userName="ngModel" required minlength="12" maxlength="32">
+          <div *ngIf="userName.invalid && (userName.dirty || userName.touched)" class="text-danger">
+            <div *ngIf="userName.errors.required">
+              用户名不能为空
+            </div>
+            <div *ngIf="userName.errors.minlength">
+              最小长度不能小于12个字符
+            </div>
+            <div *ngIf="userName.errors.maxlength">
+              最大长度不能大于32个字符
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': mobile.invalid && (mobile.dirty || mobile.touched) }">
+        <label class="col-xs-2 control-label">手机号：</label>
+        <div class="col-xs-10">
+          <input #mobile="ngModel" [(ngModel)]="regModel.mobile" name="mobile" ChineseMobileValidator class="form-control"
+            placeholder="Mobile">
+          <div *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)" class="text-danger">
+            <div *ngIf="!mobile.errors.ChineseMobileValidator">
+              请输入合法的手机号
+            </div>
+          </div>
         </div>
       </div>
       <div class="form-group">
@@ -23,11 +47,28 @@
           </div>
         </div>
       </div>
+      <button type="submit">submit</button>
     </form>
   </div>
   <div class="panel-footer">
-    <p>用户名：{{regModel.userName}}</p>
-    <p>密码：{{pwd.value}}</p>
-    <p>记住我：{{regModel.rememberMe}}</p>
+      <p>用户名：value--{{userName.value}}
+          valid--{{userName.valid}}
+          invalid--{{userName.invalid}}
+          pending--{{userName.pending}}
+          pristine--{{userName.pristine}}
+          dirty--{{userName.dirty}}
+          untouched--{{userName.untouched}}
+          touched--{{userName.touched}}
+</p>
+<p>密码：{{pwd.value}}</p>
+<p>手机号：{{mobile.value}}</p>
+<p>表单状态： {{registerForm}}{{registerForm.valid}} 
+             {{registerForm.invalid}} 
+             {{registerForm.pending}} 
+             {{registerForm.pristine}} 
+             {{registerForm.dirty}}
+             {{registerForm.untouched}} 
+             {{registerForm.touched}}
+</p>
   </div>
 </div>
