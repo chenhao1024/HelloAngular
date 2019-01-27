@@ -75,6 +75,7 @@ import {AuthService} from './auth/auth.service';
 import { FormComponent } from './form/form.component';
 import { QuickStartComponent } from './form/quick-start/quick-start.component';
 import { NameEditorComponent } from './form/name-editor/name-editor.component';
+import { ProfileEditorComponent } from './form/profile-editor/profile-editor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -137,7 +138,8 @@ import { NameEditorComponent } from './form/name-editor/name-editor.component';
     FormComponent,
     QuickStartComponent,
     ChineseMobileValidator,
-    NameEditorComponent
+    NameEditorComponent,
+    ProfileEditorComponent
     // OrderInfoComponent,
     // UserInfoComponent,
     // HomeComponent,
