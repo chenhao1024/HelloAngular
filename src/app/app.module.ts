@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { MypreloadingStrategy } from './common/my-preloading-strategy';
 import {ChineseMobileValidator} from './form/quick-start/directives/Chinese-mobile-validator.directive';
-
+import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -74,6 +74,7 @@ import {AuthGuard} from './auth/auth.guard';
 import {AuthService} from './auth/auth.service';
 import { FormComponent } from './form/form.component';
 import { QuickStartComponent } from './form/quick-start/quick-start.component';
+import { NameEditorComponent } from './form/name-editor/name-editor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -135,7 +136,8 @@ import { QuickStartComponent } from './form/quick-start/quick-start.component';
     OrderMngComponent,
     FormComponent,
     QuickStartComponent,
-    ChineseMobileValidator
+    ChineseMobileValidator,
+    NameEditorComponent
     // OrderInfoComponent,
     // UserInfoComponent,
     // HomeComponent,
@@ -146,7 +148,8 @@ import { QuickStartComponent } from './form/quick-start/quick-start.component';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routes, {preloadingStrategy: MypreloadingStrategy})
+    RouterModule.forRoot(routes, {preloadingStrategy: MypreloadingStrategy}),
+    ReactiveFormsModule
   ],
   providers: [OrderServiceService, MypreloadingStrategy, AuthGuard, AuthService],
   bootstrap: [AppComponent],
